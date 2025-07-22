@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="OpenCart Regression Suite"  verbose="2"  thread-count="3" parallel="tests">
+	
+	<test name="LoginpageTest">
+	<parameter name="browser" value="chrome" />
+	<classes>
+			<class name="com.qa.test.LoginpageTest"/>
+		</classes>
+	</test>
+	<test name="EditPageTest">
+	<parameter name="browser" value="edge" />
+	<classes>
+			<class name="com.qa.test.EditPageTest"/>
+		</classes>
+	</test>
+	<test name="AccountTest">
+	<parameter name="browser" value="chrome" />
+	<classes>
+			<class name="com.qa.test.AccountTest"/>
+		</classes>
+	</test>
+</suite>
